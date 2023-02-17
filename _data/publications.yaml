@@ -4,12 +4,12 @@ papers:
   - title: "Exploring Spherical Autoencoder for Spherical Video Content Processing"
     authors: "<b>Jin Zhou</b>, Na Li, Yao Liu, Shuochao Yao, Songqing Chen"
     venue: "ACM MM 2022"
-    paper_pdf: "/assets/publications/SAE.pdf"
+    paper_pdf: "/assets/publications/MM22.pdf"
     #code: ""
     #website: "projects/AAAI2020.html"
-    #poster: "/assets/publications/AAAI20poster.pdf"
-    #slide: "/assets/publications/AAAI20slide.pdf"
-    #image: "/assets/publications/1911.10776.jpg"
+    poster: "/assets/publications/MM22Poster.pdf"
+    slide: "/assets/publications/MM22Slides.pdf"
+    image: "/assets/publications/MM22pic.jpg"
     #url: "projects/AAAI2020.html"
 
 
