@@ -1,0 +1,151 @@
+---
+layout: default
+title: Home
+---
+<!-- ========== BIO ========== -->
+<div class="docs-section" id="bio">
+  <h4>Bio</h4>
+  
+  <p>
+    I am a Ph.D. student at <a href="https://cs.gmu.edu/">CSE</a>, <a href="https://gmu.edu">Geroge Mason University</a>, 
+    advised by Professor <a href="https://cs.gmu.edu/~sqchen/">Songqing Chen.
+    My research involves developing Video streaming systems, especially in 360 degree video streaming and social VR applications that are both innovative and user-friendly.
+    
+  </p>  
+
+</div>
+
+
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+  {% for paper in site.data.publications.papers %}
+  <div class="paper">
+      <div class="row">
+          <div class="four columns">
+              <div class="paper-img">
+                  <img src='{{ site.baseurl }}{{ paper.image }}' width="100%">
+              </div>
+          </div>
+          <div class="eight columns">
+              <!--               <div class="vertical-center"> -->
+              <p class="title"><b>{{ paper.title }}</b></p>
+              <p>{{ paper.authors }}</p>
+              <p><i>{{ paper.venue }}</i></p>
+             
+              <div class="paper-buttons">
+                {% if paper.paper_pdf %}
+                  <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+                {% endif %}
+   
+                {% if paper.website %}
+                  <a class="button" href="{{ paper.website }}" target="_blank">Website</a>
+                {% endif %}
+   
+                {% if paper.code %}
+                  <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+                {% endif %}
+   
+                {% if paper.poster %}
+                  <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+                {% endif %}
+   
+                {% if paper.slide %}
+                  <a class="button" href="{{ paper.slide | prepend: site.baseurl }}" target="_blank">Slide</a>
+                {% endif %}
+   
+                {% if paper.video %}
+                  <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+                {% endif %}
+                
+              </div>
+              <!--               </div> -->
+          </div>
+      </div>
+  </div>
+  {% endfor %}
+  <!--    </div>
+    </div> -->
+</div>
+ 
+<!-- 
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+  
+  <div class="tab-content">
+     {% for paper in site.data.publications.papers %}
+        <div class="paper">
+        	
+           <div class="paper-img">
+           	 {% if paper.image %}
+           	   <a href="{{ paper.url }}">
+           	    <img src="{{ paper.image }}" align="left" border=0 position="absolute" width="300" height="110" hspace=20/>
+               </a>
+           	 {% endif %}
+           </div>
+           
+          <p class="title"><b>{{ paper.title }}</b></p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+                     
+           <div class="paper-buttons">
+             {% if paper.paper_pdf %}
+               <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+             {% endif %}
+
+             {% if paper.website %}
+               <a class="button" href="{{ paper.website }}" target="_blank">Website</a>
+             {% endif %}
+
+             {% if paper.code %}
+               <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+             {% endif %}
+
+             {% if paper.poster %}
+               <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+             {% endif %}
+
+             {% if paper.slide %}
+               <a class="button" href="{{ paper.slide | prepend: site.baseurl }}" target="_blank">Slide</a>
+             {% endif %}
+
+             {% if paper.video %}
+               <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+             {% endif %}
+             
+           </div>
+        </div>
+     {% endfor %}
+
+  </div>
+</div> 
+-->
+
+<!-- ========== Awards ========== -->
+ <!-- 
+<div class="docs-section" id="awards">
+  <h4>Awards</h4>
+  
+  <p>
+    
+  <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/winners">Qualcomm Innovation Fellowship</a>, 2022 <br/>
+ 
+  </p>
+
+</div>
+-->
+<!-- ========== MISC ========== -->
+<div class="docs-section" id="MISC">
+  <h4>MISC</h4>
+  
+  <p>
+    I enjoy reading, volunteering, and exploring life in different cultures.
+  </p>
+
+</div>
+
+
+  <h4>Acknowledgement</h4>
+    <p>
+      This website design is based on the template from <a href="https://github.com/msaveski/www_personal">Martin Saveski</a>.
+    </p>
